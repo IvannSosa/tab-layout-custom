@@ -41,10 +41,9 @@ function TabListItem(props: Props) {
   }
 
   return (
-    <div
-      className={`${handles.listItem} ${
-        isActive ? handles.listItemActive : ''
-      } ph2 pv2 ma2`}
+    <h2
+      className={`${handles.listItem} ${isActive ? handles.listItemActive : ''
+        } ph2 pv2 ma2`}
     >
       <Button
         variation={isActive ? 'primary' : 'tertiary'}
@@ -52,7 +51,7 @@ function TabListItem(props: Props) {
       >
         <IOMessage id={label} />
       </Button>
-    </div>
+    </h2>
   )
 }
 
